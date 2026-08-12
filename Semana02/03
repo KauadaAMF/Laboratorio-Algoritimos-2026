@@ -1,0 +1,5 @@
+Num = input("Número: ")
+resultado = Num * 2 
+print("Dobro: ", resultado)
+resultado = Num / 2
+print("Metade: ", resultado)
