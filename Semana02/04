@@ -1,0 +1,3 @@
+Ano = int(input("Número: "))
+resultado = Ano - 2026 
+print("Você têm: ", resultado)
