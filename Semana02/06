@@ -1,0 +1,3 @@
+preco = float(input("Valor: "))
+valor = perco * 0.18
+print("Valor Final:", valor)
