@@ -1,0 +1,3 @@
+Cavalos = int(input("Quantidade de Cavalos: "))
+Valor = (Cavalos * 4) * 80
+print("Valor Final: ", Valor)
