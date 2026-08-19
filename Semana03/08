@@ -1,0 +1,7 @@
+valor = float(input("Valor da Compra:"))
+
+if valor > 100:
+    novo_valor = valor * 0.90
+    print("Desconto de 10%: ", novo_valor)
+elif valor < 100:
+    print("Valor final: ", valor)
