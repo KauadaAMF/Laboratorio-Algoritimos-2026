@@ -1,0 +1,8 @@
+reais =  int(input("Reais de Gasolina: "))
+litros = reais / 6.53
+
+if reais < 6.53:
+    print("Valor Insuficiente")
+
+elif reais > 6.53: 
+    print("Litros: ", litros)
