@@ -1,0 +1,24 @@
+cliente = input("Nome do Cliente: ")
+valor = float(input("Valor da Compra: "))
+print("1 - para dinheiro")
+print("2 - para cartão")
+forma = input("Forma de Pagamento: ")
+
+if valor > 200 and forma == 2:
+    novo_valor = valor * 0.85
+    print("Nome do Cliente:", cliente)
+    print("Valor Original:", valor)
+    print("Valor com Desconto", novo_valor)
+elif valor > 200 and forma == 1:
+    novo_valor = valor * 0.95
+    print("Nome do Cliente:", cliente)
+    print("Valor Original:", valor)
+    print("Valor com Desconto", novo_valor)
+elif valor <= 200 and forma == 2:
+    novo_valor = valor * 0.90
+    print("Nome do Cliente:", cliente)
+    print("Valor Original:", valor)
+    print("Valor com Desconto", novo_valor)
+elif valor < 200 and forma == 1:
+    print("Nome do Cliente:", cliente)
+    print("Valor Original:", valor)
