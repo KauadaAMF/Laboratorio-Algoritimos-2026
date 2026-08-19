@@ -1,0 +1,7 @@
+valor = int(input("Valor: "))
+
+if valor > 0:
+    dobro = valor * 2
+    print("", dobro)
+elif valor < 0:
+    print("Número é Inválido")
