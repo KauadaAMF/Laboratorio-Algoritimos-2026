@@ -1,0 +1,38 @@
+print("1- Kit Básico: Número de peito + medalha - R$100,00")
+print("2- Kit Plus: Número de peito + medalha + camiseta - R$120,00e")
+print("3- Kit Premium: Número de peito + medalha + camiseta + squeeze + boné - R$150,00")
+valor = float(input("Valor do Kit: "))
+opc = int(input("Opção do Kit: "))
+
+if opc == 1:
+    valor = valor - 100 
+    if valor == 0:
+        print("Valor Suficiente")
+    elif valor > 0:
+        print("Valor Suficiente")
+        print("Troco: ", valor)
+    elif valor < 0:
+        print("Valor Insuficiente")
+        print("Falta: ", valor)
+elif opc == 2:
+    valor = valor - 120 
+    if valor == 0:
+        print("Valor Suficiente")
+    elif valor > 0:
+        print("Valor Suficiente")
+        print("Troco: ", valor)
+    elif valor < 0:
+        print("Valor Insuficiente")
+        print("Falta: ", valor)
+elif opc == 3:
+    valor = valor - 150 
+    if valor == 0:
+        print("Valor Suficiente")
+    elif valor > 0:
+        print("Valor Suficiente")
+        print("Troco: ", valor)
+    elif valor < 0:
+        print("Valor Insuficiente")
+        print("Falta: ", valor)
+else:
+    print("Opção Invalida")
