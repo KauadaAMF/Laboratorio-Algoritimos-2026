@@ -1,0 +1,26 @@
+print("À vista")
+print("Em 2 vezes")
+print("Em 3 vezes")
+valor = float(input("Valor da Inscrição: "))
+pagamento = int(input("Opção de Pagamento: "))
+
+if pagamento == 1:
+    print("Valor da Inscrição: ", valor)
+    print("Opção Escolhida: ", pagamento)
+
+elif pagamento == 2:
+    parcela = valor / 2
+
+    print("Valor da Inscrição: ", valor)
+    print("Opção Escolhida: ", pagamento)
+    print("Valor das Parcelas: ", parcela)
+
+elif pagamento == 3:
+    parcela = valor / 3 
+
+    print("Valor da Inscrição: ", valor)
+    print("Opção Escolhida: ", pagamento)
+    print("Valor das Parcelas: ", parcela)
+
+else:
+    print("Opção Invalida")
