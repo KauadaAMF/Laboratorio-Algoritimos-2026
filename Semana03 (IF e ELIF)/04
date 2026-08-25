@@ -1,0 +1,20 @@
+valor = float(input("Valor do Ingresso: "))
+print("1- Ingresso normal")
+print("2- Estudante")
+print("3- Criança")
+print("4- Idoso")
+opc = int(input("Opção de Ingresso: "))
+
+if opc == 1:
+    print("Valor do Pagamento: ", valor)
+elif opc == 2:
+    valor = valor * 0.50
+    print("Valor do Pagamento: ",valor)
+elif opc == 3:
+    valor = valor * 0.60
+    print("Valor do Pagamento: ",valor)
+elif opc == 4:
+    valor = valor * 0.40
+    print("Valor do Pagamento: ",valor)
+else:
+    print("Opção Invalida")
