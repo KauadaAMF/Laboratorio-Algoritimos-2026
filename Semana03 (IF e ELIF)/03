@@ -1,0 +1,31 @@
+print("A) 21 km")
+print("B) 42,195 km")
+print("C) 10 km")
+print("D) 5 km")
+Opc = input("Qual é a distância oficial de uma maratona?")
+
+if Opc == "b":
+    print("Acertou")
+else:
+    print("Errou")'''
+
+valor = float(input("Valor do Ingresso:"))
+print("Ingresso Normal")
+print("Estudante ")
+print("Criança até 12 anos")
+print("Idoso")
+Opc = int(input("Opção escolhida pelo Cliente: "))
+
+if Opc == 1:
+    print("Valor: ", valor)
+elif Opc == 2:
+    desconto = valor * 0.50
+    print("Valor: ", desconto)
+elif Opc == 3:
+    desconto = valor * 0.60
+    print("Valor: ", desconto)
+elif Opc == 4:
+    desconto = valor * 0.40
+    print("Valor: ", desconto)
+else:
+    print("Opção Invalida")
