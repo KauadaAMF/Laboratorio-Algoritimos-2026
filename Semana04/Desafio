@@ -15,7 +15,7 @@ if Resposta == "sim":
 Resposta = input("Você tem algo que comprove sua inocência?")
 if Resposta == "sim":
     positivas = positivas + 1
-if positivas <= 3:
+if positivas >= 3:
     print("Pessoa suspeita.")
 else:
     print("Pessoa não considerada suspeita.")
