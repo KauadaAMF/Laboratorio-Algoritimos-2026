@@ -1,0 +1,20 @@
+litros = float(input("Litros: "))
+valor = litros * 6.15
+
+if litros >= 20 and valor > 100:
+    valor_final = valor / 0.90
+    desconto = valor_final - valor 
+    print("Quantidade de Litros: ", litros)
+    print("Valor Total: ", valor)
+    print("Desconto de: ", desconto)
+    print("Valor: ", valor_final)
+elif litros >= 20 and valor <= 100:
+    valor_final = valor / 0.95
+    desconto = valor_final - valor 
+    print("Quantidade de Litros: ", litros)
+    print("Valor Total: ", valor)
+    print("Desconto de: ", desconto)
+    print("Valor: ", valor_final)
+else:
+    print("Quantidade de Litros: ", litros)
+    print("Valor Total: ", valor)
