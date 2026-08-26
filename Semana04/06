@@ -1,18 +1,18 @@
 morango = float(input("Quantidade de Morago: "))
 macas = float(input("Quantidade de Maças: "))
 
-if morango >= 5:
+if morango <= 5:
     valor_morango = 2.50
-elif morango < 5:
+elif morango > 5:
     valor_morango = 2.20
-if macas >= 5:
+if macas <= 5:
     valor_macas = 1.80
-elif macas < 5:
+elif macas > 5:
     valor_macas = 1.50
 
 kg_total = morango + macas
 valor_total = valor_macas + valor_morango
-if kg_total < 8 or valor_total < 25:
+if kg_total > 8 or valor_total > 25:
     valor_final = valor_total * 0.10
     print("Valor Final: ", valor_final)
 else:
