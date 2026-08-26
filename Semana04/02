@@ -1,0 +1,14 @@
+a = int(input("Força A:"))
+b = int(input("Força B:"))
+c = int(input("Força C:"))
+
+if a + b > c and a + c > b and b + c > a:
+    print("Equilíbrio")
+    if a == b == c:
+        print("Simétrico")
+    elif a == b or a == c or b == c:
+        print("Parcialmente Simétrico")
+    else:
+        print("Assimétrico")
+else:
+    print("Não há Equilíbrio")
