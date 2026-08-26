@@ -13,7 +13,7 @@ elif macas > 5:
 kg_total = morango + macas
 valor_total = valor_macas + valor_morango
 if kg_total > 8 or valor_total > 25:
-    valor_final = valor_total * 0.10
+    valor_final = valor_total * 0.90
     print("Valor Final: ", valor_final)
 else:
     print("Valor Final: ", valor_total)
