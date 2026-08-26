@@ -1,0 +1,34 @@
+N1 = float(input("Nota da G1: "))
+N2 = float(input("Nota da G2: "))
+nota_final = (N1 + N2) / 2
+
+if nota_final <= 9 and nota_final >= 10:
+    print("Nota G1: ", N1)
+    print("Nota G2: ", N2)
+    print("Media: ", nota_final)
+    print("Conceito: A")
+    print("Conceito: Aprovado")
+elif nota_final <= 7.5 and nota_final > 9:
+    print("Nota G1: ", N1)
+    print("Nota G2: ", N2)
+    print("Media: ", nota_final)
+    print("Conceito: B")
+    print("Conceito: Aprovado")
+elif nota_final <= 6 and nota_final > 7.5:
+    print("Nota G1: ", N1)
+    print("Nota G2: ", N2)
+    print("Media: ", nota_final)
+    print("Conceito: C")
+    print("Conceito: Aprovado")
+elif nota_final <= 4 and nota_final > 6:
+    print("Nota G1: ", N1)
+    print("Nota G2: ", N2)
+    print("Media: ", nota_final)
+    print("Conceito: D")
+    print("Conceito: Aprovado")
+elif nota_final <= 0 and nota_final > 4:
+    print("Nota G1: ", N1)
+    print("Nota G2: ", N2)
+    print("Media: ", nota_final)
+    print("Conceito: E")
+    print("Conceito: Aprovado")
