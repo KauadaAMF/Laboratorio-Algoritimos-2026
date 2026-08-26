@@ -1,0 +1,21 @@
+positivas = 0
+
+Resposta = input("Você esteve no local do crime?")
+if Resposta == "sim":
+    positivas = positivas + 1
+Resposta = input("Você conhece a vítima?")
+if Resposta == "sim":
+    positivas = positivas + 1
+Resposta = input("Você já teve algum desentendimento com a vítima?")
+if Resposta == "sim":
+    positivas = positivas + 1
+Resposta = input("Você estava próximo ao local na hora do ocorrido?")
+if Resposta == "sim":
+    positivas = positivas + 1
+Resposta = input("Você tem algo que comprove sua inocência?")
+if Resposta == "sim":
+    positivas = positivas + 1
+if positivas <= 3:
+    print("Pessoa suspeita.")
+else:
+    print("Pessoa não considerada suspeita.")
