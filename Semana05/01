@@ -1,0 +1,26 @@
+op = 0
+ing = 100
+in_max = 100
+
+while op != 4:
+    print("1- Vender")
+    print("2- Adicionar Ingressos Extras")
+    print("3- Mostrar Ingressos Disponíveis")
+    print("4- Sair")
+    op = int(input("Digite uma opção: "))
+    
+    if op == 1:
+        valor = float(input("Valor do Ingresso: "))
+        if valor == 40:
+            print("Ingresso Vendido")
+            ing -= 1
+        else:
+            print("Valor Insuficiente")
+    elif op == 2:
+        valor = int(input("Digite o Valor de Ingresso que Deseja Adicionar:"))
+        in_max += valor
+    elif op == 3:
+        print(ing, "de", in_max)
+    else:
+        print("Opção Invalida")
+        
