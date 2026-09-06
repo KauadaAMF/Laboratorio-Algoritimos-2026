@@ -1,0 +1,15 @@
+
+contador = 0
+exe = True
+
+while exe:
+    cod = int(input("Digite o Código: "))
+
+    if cod == 1040:
+        contador += 1 
+    elif cod == 0:
+        exe = False
+    else:
+        print("Código Errado")
+
+print("Carrinhos: ", contador)
