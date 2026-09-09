@@ -1,0 +1,16 @@
+exe = True
+meses = 0
+i1 = 5000
+i2 = 8000
+
+while exe:
+    i1 += (i1 * 0.05)
+    i2 += (i2 * 0.01)
+    meses += 1
+
+    if i1 > i2:
+        exe = False
+
+print("Produção da Impresa 1:", i1)
+print("Produção da Impresa 2:", i2)
+print("Número de Meses:", meses)
