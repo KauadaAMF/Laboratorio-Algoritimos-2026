@@ -10,10 +10,17 @@ while cont != 8:
     quilos = float(input("Quantidade de quilos de erva-mate produzidos: "))
     total += quilos
 
-
-    if quilos > maior:
+    if cont == 0:
         maior = quilos
-        dia_m = cont
+        menor = quilos
+    else:
+        if quilos > maior:
+            maior = quilos
+            dia_m = cont
+
+        if quilos < menor:
+            menor = quilos
+            dia_n = cont
     cont += 1
 
 media = total / 7
