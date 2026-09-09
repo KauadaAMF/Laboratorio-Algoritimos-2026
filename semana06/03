@@ -1,0 +1,5 @@
+folhas = int(input("Quantidade de folhas colhidas: "))
+
+produto = folhas // 3
+
+print("Poderão ser produzidos: ", produto)
