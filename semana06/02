@@ -1,0 +1,8 @@
+pacotes = int(input("Quantidade total de pacotes: "))
+caixas = int(input("Quantidade de caixas disponíveis: "))
+
+colocados = pacotes // caixas
+sobrando = pacotes % caixas
+
+print("Pacotes em cada caixa: ", colocados)
+print("Pacotes Sobrando: ", sobrando)
