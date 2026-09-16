@@ -1,0 +1,51 @@
+tg = 0
+td = 0
+exe = True
+
+while exe:
+  print("1 - Vender combustível")
+  print("2 - Sair")
+
+  opc = int(input("Opção: "))
+
+  if opc == 1:
+    print("Gasolina (R$ 6,89)")
+    print("Diesel (R$ 4,80)")
+    opc = int(input("Opção: "))
+    litros = int(input("Litros Abastecidos: "))
+    valorp = int(input("Valor Pago: "))
+
+    if opc == 1:
+      valort = litros * 6.89
+      tg += litros
+      print("Valor Total:", valort)
+      if valort == valorp:
+        print("Pagamento Correto")
+      elif valort < valorp:
+        troco = valorp - valort
+        print("Troco:", troco)
+      elif valort > valorp:
+        faltou = valort - valorp
+        print("Faltou:", faltou)
+    elif opc == 2:
+      valort = litros * 4.80
+      td += litros
+      print("Valor Total:", valort)
+      if valort == valorp:
+        print("Pagamento Correto")
+      elif valort < valorp:
+        troco = valorp - valort
+        print("Troco:", troco)
+      elif valort > valorp:
+        faltou = valort - valorp
+        print("Faltou:", faltou)
+    else:
+        print("Opção Invalida")
+
+  elif opc == 2:
+    print("Total de gasolina vendido:", tg)
+    print("Total de diesel vendido:", td)
+    exe = False
+
+  else:
+    print("Opção Invalida")
