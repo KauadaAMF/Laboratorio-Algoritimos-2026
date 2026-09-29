@@ -1,0 +1,9 @@
+som = 0
+
+for i in range(1, 11):
+    n = int(input("Número: "))
+    som += n
+
+    if i == 10:
+        media = som / 10
+        print("Média: ", media)
