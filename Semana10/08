@@ -1,0 +1,10 @@
+dentro = 0
+fora = 0
+
+for i in range(0, 10):
+    n = int(input("Número: "))
+
+    if n >= 10 and n <= 20:
+        dentro += 1        
+    else:
+        fora += 1
