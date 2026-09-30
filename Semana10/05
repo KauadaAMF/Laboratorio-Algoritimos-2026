@@ -1,0 +1,60 @@
+mi = 0
+vp = 0
+mas = 0
+fem = 0
+azu = 0 
+ver = 0 
+caso = 0 
+loi = 0
+casc = 0
+pre = 0
+
+for i in range(1, 16):
+    sexo = int(input("Sexo: "))
+
+    if sexo == "M":
+        mas += 1
+    elif sexo == "F":
+        fem += 1
+
+    olhos = int(input("Cor dos Olhos: "))
+
+    if olhos == "A":
+        azu += 1
+    elif olhos == "V":
+        ver += 1
+    elif olhos == "C":
+        caso += 1
+
+    cabelo = int(input("Cor dos Cabelos: "))
+
+    if cabelo == "L":
+        loi += 1
+    elif cabelo == "C":
+        casc += 1
+    elif cabelo == "P":
+        pre += 1
+
+    idade = int(input("Cor dos Cabelos: "))
+
+    if idade <= 35 and idade >= 18 and olhos == "V" and cabelo == "P":
+        vp += 1
+        if mi == 0 or mi < idade:
+            mi = idade
+    elif mi == 0:
+        mi = idade
+
+porazu = azu * 15/100
+poraver = ver * 15/100
+porcaso = caso * 15/100
+porloi = loi * 15/100
+porcasc = casc * 15/100
+porpre = pre * 15/100
+pormas = mas * 15/100
+porfem = fem * 15/100
+
+print("A maior idade do grupo: ", mi)
+print("A quantidade de indivíduos cuja idade está entre 18 e 35 anos e que tenham olhos verdes e cabelos pretos: ", vp)
+print("A porcentagem de pessoas com os olhos Azuis: ", porazu, "Verdes: ", poraver, "Castanhos: ", porcaso)
+print("A porcentagem de Loiros: ", porloi, "Castanhos: ", porcasc, "Pretos: ", porpre)
+print("A porcentagem de pessoas do sexo Masculino: ", pormas, "Feminino: ", porfem)
