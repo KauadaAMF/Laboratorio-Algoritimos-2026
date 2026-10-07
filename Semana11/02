@@ -1,0 +1,8 @@
+def t():
+    print("Olá")
+    
+def main():
+    t()
+    print("Tchau")
+
+main()
