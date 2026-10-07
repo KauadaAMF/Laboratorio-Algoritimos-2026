@@ -1,0 +1,25 @@
+def con_hor(horas, minutos):
+    if horas == 0:
+        hora12 = 12
+        periodo = "A.M."
+    elif horas < 12:
+        hora12 = horas
+        periodo = "A.M."
+    elif horas == 12:
+        hora12 = 12
+        periodo = "P.M."
+    else:
+        hora12 = horas - 12
+        periodo = "P.M."
+
+    exibir(hora12, minutos, periodo)
+
+def exibir(hora12, minutos, periodo): 
+    print(hora12, ":", minutos, periodo)
+
+def main():
+    horas = int(input("Horas: "))
+    minutos = int(input("Minutos: "))
+    con_hor(horas, minutos)
+
+main()
