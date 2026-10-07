@@ -1,0 +1,16 @@
+def do(valor):
+    dobro = valor * 2 
+    return dobro
+
+def tri(valor):
+    triplo = valor * 3 
+    return triplo
+
+def main():
+    valor = int(input(""))
+    dobro = do(valor)
+    triplo = tri(valor)
+    print("Dobro: ", dobro)
+    print("Triplo: ", triplo)
+
+main()
