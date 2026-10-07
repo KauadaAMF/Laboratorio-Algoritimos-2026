@@ -1,0 +1,14 @@
+def cal(quant):
+
+    if quant > 12:
+        valor = quant * 0.25
+    else:
+        valor = quant * 0.40 
+    return valor
+
+def main():
+    quant = int(input("Quantidade de Laranjas"))
+    valor = cal(quant)
+    print("Valor Total: ", valor)
+
+main()
