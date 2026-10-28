@@ -1,0 +1,12 @@
+vetA = []
+vetB = []
+
+for i in range(10):
+    valor = int(input("Digite um Valor: "))
+    vetA.append(valor)
+
+for i in range(9, -1, -1):
+    vetB.append(vetA[i])
+
+print("Vetor A: ", vetA)
+print("Vetor B: ", vetB)
