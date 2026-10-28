@@ -1,0 +1,9 @@
+elementos = []
+
+for i in range(10):
+    elemento = int(input("Digite um Elemento: "))
+    elementos.append(elemento)
+
+for i in range(len(elementos)):
+    if elementos[i] % 2 == 0:
+        print("Posição: ", i , "Valor Par: ", elementos[i])
