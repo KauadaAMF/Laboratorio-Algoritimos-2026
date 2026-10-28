@@ -1,0 +1,171 @@
+
+'''notas = []
+
+nota = float(input("Digite uma nota: "))
+notas.append(nota)
+
+nota = float(input("Digite uma nota: "))
+notas.append(nota)
+
+print("Notas: ", notas)
+print("Posição: ", notas[0])'''
+
+'''notas = []
+
+for i in range(5):
+    nota = float(input("Digite uma nota: "))
+    notas.append(nota)
+
+# remove o elemento
+nota = float(input("Digite um elemento para remover: "))
+notas.remove(nota)
+
+# pop remove a posição
+pos = int(input("Digite a posição para remover: "))
+notas.pop(pos)
+
+for i in range(len(notas)):
+    print("Posição: ", i , "Nota: ", notas[i])
+
+print("Notas: ", notas)
+print("Posição: ", notas[0])'''
+
+'''print("Notas")
+for i in notas:
+    print("Nota: ", i)
+
+print("Excluir 2 Elemetenos")
+total_elementos = len(notas)
+print("Total de Elementos: ", total_elementos)
+pos = 0
+excluir = float(input("Valor para Excluir: "))
+while pos < total_elementos:
+    try:
+        notas.remove(excluir)
+    except:
+        print("Não existe valor para excluir")
+        break
+    pos += 1
+    total_elementos = len(notas)
+
+print(notas)'''
+
+def menu():
+    print("1 - Inserir Elemento")
+    print("2 - Listar Elementos")
+    print("3 - Listar Elemntos (Linha a Linha)")
+    print("4 - Maior Elemento e sua Posição")
+    print("5 - Menor Elemento e sua Posição")
+    print("6 - Excluir Elemento por Posição")
+    print("7 - Excluir Elemento por Valor")
+    print("8 - Média dos Elementos")
+    print("9 - Alterar Elemento")
+    print("10 - Excluir Todos os Elementos")
+    print("0 - Sair")
+    opc = int(input("Digite a Opção"))
+    return opc
+
+def inserir_elemento(elementos):
+    elemento = float(input("Digite um Elemento: "))
+    elementos.append(elemento)
+    return elementos
+
+def listar_elementos(elementos):
+    print("Elementos:")
+    print(elementos)
+
+def listar_linha(elementos):
+    for i in range(len(elementos)):
+        print("Posição: ", i , "Valor: ", elementos[i])
+        #print("elementos[", i, "] = ", elementos[i])
+
+def maior_elemento(elementos):
+    if len(elementos) == 0:
+        return
+    maior = elementos[0]
+    maior_pos = 0
+    # maior = max(elementos) = Pega só o maior valor
+
+    for i in range(len(elementos)):
+        if maior > elementos[i]:
+            maior = elementos[i]
+            maior_pos = i
+
+    print("Maior Elemento: ", maior)
+    print("Posição: ", maior_pos)
+
+def menor_elemento(elementos):
+    if len(elementos) == 0:
+        return
+    menor = elementos[0]
+    menor_pos = 0
+    # menor = min(elementos) = Pega só o menor valor
+
+    for i in range(len(elementos)):
+        if menor > elementos[i]:
+            menor = elementos[i]
+            menor_pos = i
+
+    print("Menor Elemento: ", menor)
+    print("Posição: ", menor_pos)    
+
+def excluir_posição(elementos):
+    pos = int(input("Posição para Excluir: "))
+    if pos >= 0 and pos < len(elementos):
+        elementos.pop(pos)
+    else:
+        print("Posição não Encontrada")
+    return elementos
+
+def excluir_valor(elementos):
+    valor = float(input("Valor para Excluir: "))
+    if valor in elementos:
+        elementos.remove(valor)
+        print("Valor Excluido")
+    else:
+        print("Valor não Encontrado")
+    return elementos
+
+def media_elemetos(elementos):
+    media = sum(elementos) / len(elementos)
+    print("Média dos Elementos:", media)
+
+def alterar_elemento(elementos):
+    pos = int(input("Digite a Posição para Alterar o Elemento: "))
+    if pos >= 0 and pos < len(elementos):
+        novo_valor = float(input("Novo Valor: "))
+        elementos[pos] = novo_valor
+    else:
+        print("Posição não Encontrada")
+    return elementos
+
+def excluir_elementos(elementos):
+
+def main():
+    elementos = []
+    opc = 1
+    while opc != 0:
+        opc = menu()
+        if opc == 1:
+            elementos = inserir_elemento(elementos)
+        elif opc == 2:
+            listar_elementos(elementos)
+        elif opc == 3:
+            listar_linha(elementos)
+        elif opc == 4:
+            maior_elemento(elementos)
+        elif opc == 5:
+            menor_elemento(elementos)
+        elif opc == 6:
+            excluir_posição(elementos)
+        elif opc == 7:
+            elementos = excluir_valor(elementos)
+        elif opc == 8:
+            media_elemetos(elementos)
+        elif opc == 9:
+            elementos = alterar_elemento(elementos)
+        elif opc == 10:
+            #elementos.clear()
+            elementos = []
+
+main()
