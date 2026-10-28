@@ -1,0 +1,17 @@
+qtd = 0
+elementos = []
+
+for i in range(8):
+    elemento = int(input("Digite um Elemento: "))
+    elementos.append(elemento)
+
+for elementos in elementos:
+    soma_total += elemento
+
+    if elemento > 30:
+        qtd += 1
+        soma_maior30 += elemento 
+
+print("Quantidade de números maiores que 30:", qtd)
+print("Soma dos números maiores que 30:", soma_maior30)
+print("Soma de todos os números:", soma_total)
