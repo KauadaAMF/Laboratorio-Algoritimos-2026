@@ -1,0 +1,24 @@
+
+def peso(Azeitona):
+    for i in range(5):
+        kg = int(input("KG de Azeitona: "))
+        Azeitona.append(kg)
+    return Azeitona
+
+def mostrar_calculo(Azeitona):
+    soma = 0
+    
+    for i in range(5):
+        soma = soma + Azeitona[i]
+
+    media = soma / 5
+    
+    print("Soma: ", soma)
+    print("Média: ", media)
+
+def main():
+    Azeitona = []
+    Azeitona = peso(Azeitona)
+    mostrar_calculo(Azeitona)
+
+main()
