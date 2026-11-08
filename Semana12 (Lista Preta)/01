@@ -1,0 +1,17 @@
+
+def inserir_lotes(Lotes):
+    for i in range(10):
+        codigo = int(input("Código do Lote: "))
+        Lotes.append(codigo)
+    return Lotes
+
+def mostrar(Lotes):
+    for i in range(len(Lotes)-1, -1, -1):
+        print("Código do Lote:", Lotes[i])
+
+def main():
+    Lotes = []
+    Lotes = inserir_lotes(Lotes)
+    mostrar(Lotes)
+
+main()
