@@ -1,0 +1,38 @@
+
+def peso(Arvore):
+    for i in range(5):
+        kg = int(input("KG de Árvore: "))
+        Arvore.append(kg)
+    return Arvore
+
+def maior_arvore(Arvore):
+    maior = Arvore[0]
+    maior_pos = 0
+
+    for i in range(len(Arvore)):
+        if maior > Arvore[i]:
+            maior = Arvore[i]
+            maior_pos = i
+
+    print("Maior Árvore: ", maior)
+    print("Posição: ", maior_pos)
+
+def menor_arvore(Arvore):
+    menor = Arvore[0]
+    menor_pos = 0
+
+    for i in range(len(Arvore)):
+        if menor < Arvore[i]:
+            menor = Arvore[i]
+            menor_pos = i
+
+    print("Menor Árvore: ", menor)
+    print("Posição: ", menor_pos)
+
+def main():
+    Arvore = []
+    Arvore = peso(Arvore)
+    maior_arvore(Arvore)
+    menor_arvore(Arvore)
+    
+main()
