@@ -1,0 +1,21 @@
+
+def peso(Azeitonas):
+    for i in range(6):
+        kg = int(input("Peso da azeitona do lote: "))
+        Azeitonas.append(kg)
+    return Azeitonas
+
+def redimento(Azeitonas):
+    for i in range(len(Azeitonas)):
+        redimento = Azeitonas[i] * 0.18
+        lote = i
+        
+        print("Rendimento: ", redimento)
+        print("Lote: ", lote)
+
+def main():
+    Azeitonas = []
+    Azeitonas = peso(Azeitonas)
+    redimento(Azeitonas)
+    
+main()
