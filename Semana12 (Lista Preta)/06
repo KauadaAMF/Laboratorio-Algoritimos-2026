@@ -1,0 +1,22 @@
+
+def criar_IDs(IDs):
+    import random
+    
+    for i in range(10):
+        ID = random.randint(1, 50)
+        IDs.append(ID)
+    return IDs
+
+def exibir(IDs):
+    for i in range(len(IDs)):
+        if IDs[i] % 2 == 0:
+            print("Par:", IDs[i])
+        elif IDs[i] % 2 != 0:
+            print("Ímpar:", IDs[i])
+
+def main():
+    IDs = []
+    IDs = criar_IDs(IDs)
+    exibir(IDs)
+    
+main()
