@@ -1,0 +1,27 @@
+def verificar_codigo(etiquetas, codigo):
+    for i in range(len(etiquetas)):
+        if etiquetas[i] == codigo:
+            return False
+
+    return True
+
+
+def main():
+    etiquetas = []
+
+    while len(etiquetas) < 15:
+        codigo = int(input("Digite o código RFID: "))
+
+        if verificar_codigo(etiquetas, codigo):
+            etiquetas.append(codigo)
+            print("Código cadastrado!")
+        else:
+            print("Código repetido! Digite outro.")
+
+    print("\nEtiquetas cadastradas:")
+
+    for i in range(len(etiquetas)):
+        print(etiquetas[i])
+
+
+main()
