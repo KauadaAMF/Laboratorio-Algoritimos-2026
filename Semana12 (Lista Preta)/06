@@ -8,11 +8,17 @@ def criar_IDs(IDs):
     return IDs
 
 def exibir(IDs):
+    par = 0
+    impar = 0
+    
     for i in range(len(IDs)):
         if IDs[i] % 2 == 0:
-            print("Par:", IDs[i])
+            par += 1
         elif IDs[i] % 2 != 0:
-            print("Ímpar:", IDs[i])
+            impar += 1
+    
+    print("Pares: ", par)
+    print("Impares: ", impar)
 
 def main():
     IDs = []
