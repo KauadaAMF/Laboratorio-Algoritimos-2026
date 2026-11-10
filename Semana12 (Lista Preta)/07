@@ -1,0 +1,29 @@
+
+def criar_codigos(lote):
+    import random
+    
+    for i in range(5):
+        codigo = random.randint(1, 10)
+        lote.append(codigo)
+
+    return lote
+
+def exibir(lote):
+    duplicatas = 0
+    
+    for i in range(len(lote)):
+        for j in range(i + 1, len(lote)):
+            if lote[i] == lote[j]:
+                duplicatas += 1
+
+    if duplicatas > 0:
+        print("Há Duplicatas")
+    else:
+        print("Distintos")
+
+def main():
+    lote = []
+    lote = criar_codigos(lote)
+    exibir(lote)
+    
+main()
