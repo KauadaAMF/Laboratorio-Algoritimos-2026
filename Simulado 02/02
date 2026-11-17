@@ -1,0 +1,11 @@
+cont = 0
+v = [] * 30
+
+while cont != 30:
+    numero = int(input(""))
+
+    if numero / 4 == 0:
+        v.append(numero)
+        cont += 1
+    else:
+        print("Não é múltiplo de 4.")
