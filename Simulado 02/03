@@ -1,0 +1,67 @@
+def menu():
+    print('''1 - Inserir total de venda em um dia específico.
+2 - Apresentar valores registrados até o momento (um item por linha).
+3 - Apresentar a média dos valores e o maior valor do mês.
+4 - Alterar a valor de um dia (para isso, deve-se solicitar qual dia deseja-se alterar)
+5 - Sair
+''')
+    opc = int(input("Opção: "))
+    return opc
+
+def alterar_valor(valores):
+    dia = int("Dia: ")
+
+    if dia > 0 and dia < len(valores):
+        novo_valor = float(input(""))
+        valores[dia] = novo_valor
+    else:
+        print("Erro")
+
+    return valores
+
+def apresentar_valores(valores):
+    for i in range(len(valores)):
+        print("Dia", i, "Valor:", valores[i])
+
+def media_valores(valores):
+    media = sum(valores) / len(valores)
+    print("Média: ", media)
+
+    maior = valores[0]
+    maior_dia = 0
+
+    for i in range(len(valores)):
+        if maior > valores[i]:
+            maior = valores[i]
+            maior_dia = i
+    
+    print("Maior Valor: ", maior)
+    print("Dia: ", maior_dia)
+
+def inserir_valor(valores):
+    dia = int("Dia: ")
+
+    if dia > 0 and dia < len(valores):
+        if valores[dia] == 0:
+            novo_valor = float(input(""))
+            valores[dia] = novo_valor
+    else:
+        print("Erro")
+
+    return valores
+
+def main():
+    valores = [] * 30
+    opc = 0
+    while opc != 5:
+        opc = menu()
+        if opc == 1:
+            valores = inserir_valor(valores)
+        elif opc == 2:
+            valores = apresentar_valores(valores)
+        elif opc == 3:
+            valores = media_valores(valores)
+        elif opc == 4:
+            valores = alterar_valor(valores)
+
+main()
