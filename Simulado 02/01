@@ -1,0 +1,43 @@
+def somar_valores():
+    v1 = int(input("Valor 1: "))
+    v2 = int(input("Valor 2: "))
+
+    soma = v1 + v2
+    print("Resultado: ", soma)
+    return v1, v2
+
+def substituir_valores():
+    v1 = int(input("Valor 1: "))
+    v2 = int(input("Valor 2: "))
+
+    sub = v1 - v2
+    print("Resultado: ", sub)
+    return v1, v2 
+
+def apresentar(valores_digitados):
+    print("", valores_digitados)
+
+def menu():
+    print('''1 - Somar dois valores
+    2 - Subtrair dois valores
+    3 - Mostrar valores
+    4 - Sair
+    ''')
+    opc = int(input("Opção: "))
+    return opc
+
+def main():
+    valores_digitados = []
+    opc = 0
+    while opc != 4:
+        opc = menu()
+        if opc == 1:
+            valores_digitados = somar_valores()
+        elif opc == 2:
+            valores_digitados = substituir_valores()
+        elif opc == 3:
+            apresentar(valores_digitados)
+        else:
+            print("Erro")
+
+main()
